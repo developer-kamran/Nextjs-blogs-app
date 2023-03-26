@@ -17,14 +17,17 @@ export default function PostPage({
           {date}
         </span>
 
-        <p className='leading-relaxed mb-8 mt-3' style={{ lineHeight: '1.8' }}>
+        <p
+          className='leading-relaxed mb-8 mt-3 text-gray-900 '
+          style={{ lineHeight: '1.8', fontSize: '1.05rem' }}
+        >
           {content}
         </p>
         <div className='flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full'>
           <span className='inline-block py-1 px-2 rounded bg-pink-50 text-pink-500 text-xs font-medium tracking-widest'>
             {category}
           </span>
-          <span className='mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 text-pink-500'>
+          <span className='text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 '>
             <svg
               className='w-4 h-4 mr-1 '
               stroke='currentColor'
@@ -39,7 +42,7 @@ export default function PostPage({
             </svg>
             {views}
           </span>
-          <span className='text-gray-400 inline-flex items-center leading-none text-sm text-pink-500'>
+          <span className='text-gray-400 inline-flex items-center leading-none text-sm '>
             <svg
               className='w-4 h-4 mr-1 '
               stroke='currentColor'
@@ -71,7 +74,7 @@ export default function PostPage({
         </a>
         <Link
           href={'/'}
-          className='inline-flex text-white bg-pink-400 border-0 py-2 px-5 mt-8 focus:outline-none hover:bg-pink-500 rounded text-sm '
+          className='inline-flex text-white bg-pink-400 border-0 py-2 px-5 my-8 focus:outline-none hover:bg-pink-500 rounded text-sm '
         >
           Go Back
         </Link>

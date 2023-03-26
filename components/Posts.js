@@ -15,7 +15,7 @@ const Posts = ({ posts }) => {
         {posts.frontmatter.date}
       </span>
 
-      <p className='leading-relaxed mb-8'>{posts.frontmatter.excerpt}</p>
+      <p className='leading-relaxed mb-8'>{posts.frontmatter.excerpt}...</p>
       <div className='flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full'>
         <Link
           href={`/blog/${posts.slug}/`}
@@ -35,7 +35,7 @@ const Posts = ({ posts }) => {
             <path d='M12 5l7 7-7 7'></path>
           </svg>
         </Link>
-        <span className='mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 text-pink-500'>
+        <span className='text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 '>
           <svg
             className='w-4 h-4 mr-1 '
             stroke='currentColor'
@@ -50,7 +50,7 @@ const Posts = ({ posts }) => {
           </svg>
           {posts.frontmatter.views}
         </span>
-        <span className='text-gray-400 inline-flex items-center leading-none text-sm text-pink-500'>
+        <span className='text-gray-400 inline-flex items-center leading-none text-sm '>
           <svg
             className='w-4 h-4 mr-1 '
             stroke='currentColor'
